@@ -10644,13 +10644,18 @@ a.text-dark:focus {
   }
 }
 
-.title {
+body {
+  background-color: #38662c;
+  position: absolute;
+}
+
+body .header .title {
   width: 20%;
   margin: auto;
 }
 
-body {
-  background-color: aqua;
+body .im {
+  width: 10%;
 }
 
 body .r1 {
@@ -10662,6 +10667,28 @@ body .r2 {
 }
 
 .aside {
-  background-color: brown;
+  background-color: #6a7a2c;
+}
+
+.d {
+  width: 300px;
+  background-color: chocolate;
+}
+
+.content {
+  background-color: chocolate;
+}
+
+.user {
+  background-color: darkgreen;
+}
+
+.productWrapper {
+  background-color: darkolivegreen;
+  display: inline-block;
+}
+
+.container {
+  z-index: 100;
 }
 

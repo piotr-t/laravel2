@@ -1,12 +1,24 @@
 @import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css?family=Nunito:200,600");
+@import "variables";
 
-.title{
-    width: 20%;
-    margin: auto;
-}
 body{
-    background-color: aqua;
+    background-color:$body;
+    position: absolute;
+
+    .header{
+        //position: absolute;
+        //z-index: 10;
+        .title{
+            width: 20%;
+            margin: auto;
+            //position: relative;
+            //z-index: -10;
+        }
+    }
+    .im{
+        width: 10%;
+    }
     .r1{
         min-height: 600px;
     }
@@ -15,5 +27,23 @@ body{
     }
 }
 .aside{
-    background-color: brown;
+    background-color:$section-color;
+}
+.d{
+    width: 300px;
+    background-color: chocolate;
+}
+.content{
+    background-color: chocolate;
+}
+.user{
+    background-color: darkgreen;
+}
+.productWrapper{
+    background-color: darkolivegreen;
+    display: inline-block;
+    //height: 200px;
+}
+.container{
+    z-index: 100;
 }

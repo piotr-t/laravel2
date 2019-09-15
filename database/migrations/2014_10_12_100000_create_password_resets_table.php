@@ -13,9 +13,13 @@ class CreatePasswordResetsTable extends Migration
      */
     public function up()
     {
-        Schema::create('password_resets', function (Blueprint $table) {
-            $table->string('email')->index();
-            $table->string('token');
+        Schema::create('products', function (Blueprint $table) {
+
+            $table->string('name')->index();
+            $table->void('id');
+            $table->string('amount');
+            $table->string('price');
+            $table->string('image');
             $table->timestamp('created_at')->nullable();
         });
     }
@@ -27,6 +31,6 @@ class CreatePasswordResetsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('password_resets');
+        Schema::dropIfExists('products');
     }
 }
