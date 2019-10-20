@@ -10692,3 +10692,8 @@ body .r2 {
   z-index: 100;
 }
 
+th {
+  border: 2px solid black;
+  width: 300px;
+}
+

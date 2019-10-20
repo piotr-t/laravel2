@@ -40,10 +40,10 @@
 <div class="content col-sm-9">
         @yield("footer")
 <p> Content</p>
-<button  class="btn btn-outline-primary">Zarządzaj produktami</button>
-<button class="btn btn-outline-primary">Dodaj produkt</button>
-<button class="btn btn-outline-primary">Usuń produkt</button>
-<button class="btn btn-outline-primary">Zarządzaj kontem</button>
+<a class="btn btn-outline-primary">Zarządzaj produktami</a>
+<a class="btn btn-outline-primary">Dodaj produkt</a>
+<a class="btn btn-outline-primary">Usuń produkt</a>
+<a class="btn btn-outline-primary">Zarządzaj kontem</a>
 
 <input type="file" name="nazwa" value="wstaw zdjęcie z pliku" accept="image/png, image/jpeg" multiple>
 
@@ -58,8 +58,20 @@
     </div>
   </div>
 </form>
-
+<div class="request">
+    {{$request}}
+</div>
 <h2 class="powiadomienia">Powiadomienia</h2>
+<div class="powiadomienia-table">
+    <table class="powiadomienia-tab">
+        <tr>
+            <th>od kogo</th>
+            <th>wiadomość</th>
+            <th>data</th>
+        </tr>
+        <div class="odpisz">odpisz</div>
+    </table>
+</div>
 @foreach ($page1 as $i1)
 <div class="productWrapper">
     <img src="{{$i1->image}}" alt="" class="im" >
